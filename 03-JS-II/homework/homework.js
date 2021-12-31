@@ -4,7 +4,7 @@ function obtenerMayor(x, y) {
   // "x" e "y" son números enteros (int).
   // Devuelve el número más grande
   // Si son iguales, devuelve cualquiera de los dos
-  // Tu código: 
+  // Tu código:
   if (x>0 && y>0){
                     if (x>y){ return x;
 
@@ -59,6 +59,7 @@ function colors(color) {
   //En caso que el color recibido sea "orange", devuleve --> "This is orange"
   //Caso default: devuelve --> "Color not found"
   //Usar el statement Switch.
+  
   switch (color){
      case 'blue'  : return 'This is blue';
      case 'red'   : return 'This is red';
@@ -95,6 +96,8 @@ function esEntero(numero) {
   // De lo contrario, devuelve "false"
   // Pista: Puedes resolver esto usando `Math.floor`
   // Tu código:
+  if(numero === Math.floor(numero)){ return true; }
+  else return false;
  
 }
 
@@ -149,8 +152,8 @@ function tablaDelSeis(){
   //Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
   //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
   //Escribe tu código aquí  
-  let arraytabla6=[];
-  for(let i=0;i<11;i++){ arraytabla6.push(6*i);   
+  var arraytabla6=[];
+  for(var i=0;i<11;i++){ arraytabla6.push(6*i);   
 
                        } 
   return arraytabla6;

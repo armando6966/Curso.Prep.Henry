@@ -28,7 +28,7 @@ const nuevoModulo = 21 % 5 === 1;
 function devolverString(str) {
   // "Return" la string provista: str
   // Tu código:
-    return str;
+    return str;cc
     
 }
 
@@ -203,6 +203,11 @@ function agregarSimboloExclamacion(str) {
   var simbolo='!';
   var simbf= simbex+simbolo;
   return simbf;
+  /* var simbex=str;
+  var simbolo="!"; 
+  var simbf=simbex+simbolo;
+  return simbf; 
+  */
 }
 
 function combinarNombres(nombre, apellido) {
@@ -214,6 +219,7 @@ function combinarNombres(nombre, apellido) {
   var nom2=apellido;
   var nom3=nom1+esp+nom2;
   return nom3;
+  /* return nombre+" "+ apellidos; */
 }
 
 function obtenerSaludo(nombre) {
@@ -233,6 +239,7 @@ function obtenerAreaRectangulo(alto, ancho) {
   // Tu código:
   var area=alto*ancho;
   return area;
+  return alto*ancho;
 }
 
 
@@ -241,6 +248,7 @@ function retornarPerimetro(lado){
   //Escribe tu código aquí
   var per=4*lado;
   return per;
+  return 4*lado;
 }
 
 
@@ -249,6 +257,7 @@ function areaDelTriangulo(base, altura){
   //Escribe tu código aquí
   var areat=(base*altura)/2;
   return areat;
+  return (base*altura)/2;
 }
 
 
@@ -274,8 +283,8 @@ function esVocal(letra){
                           if(letra==='a' || letra==='e' || letra==='i' || letra==='o' || letra==='u' ){
                                return vocal;
                             }
-                        else{
-                               return dincorrecto;
+                          else{
+                              return dincorrecto;
                             }  
     
                       }
