@@ -12,6 +12,7 @@ function devolverPrimerElemento(array) {
 function devolverUltimoElemento(array) {
   // Devuelve el último elemento de un array
   // Tu código:
+    
     return array[array.length-1];
 }
 
@@ -28,11 +29,11 @@ function incrementarPorUno(array) {
   // Aumenta cada entero por 1
   // y devuelve el array
   // Tu código:
-var narray=[];
+ var narray=[];
   for(var i=0;i<array.length;i++){
         narray[i]=array[i]+1;
                                  }
-  return narray;
+  return narray; 
 }
 
 
@@ -69,13 +70,17 @@ function arrayContiene(array, elemento) {
   // Comprueba si el elemento existe dentro de "array"
   // Devuelve "true" si está, o "false" si no está
   // Tu código:
-  var array=[];
+
+  ind= array.indexOf(elemento)
+  if(ind != -1){ return true;}
+  else{ return false; }
+  /* var array=[];
   for(var i=0;i<array.length;i++){
                 if(array[i]=elemento){
                                         return true;
                                      }                                                 
                                  }
-  return false ;
+  return false ; */
 }
 
 
@@ -117,17 +122,21 @@ function multiplicarArgumentos() {
   // Usa la palabra clave `arguments` para multiplicar todos los argumentos y devolver el producto
   // Si no se pasan argumentos devuelve 0. Si se pasa un argumento, simplemente devuélvelo
   // Escribe tu código aquí:
-  var resul=1;
+  if(arguments.length===0){return 0;}
+  else{ var resul=1;
   for(var i=0;i<arguments.length;i++){
            resul=resul*arguments[i];
                                      }
   return resul;
+       }
+      
 }
 
 
 function cuentoElementos(arreglo){
   //Realiza una función que retorne la cantidad de los elementos del arreglo cuyo valor es mayor a 18.
   //Escribe tu código aquí
+  
   var conteos=0;
   for(let i=0;i<arreglo.length;i++){
             if(arreglo[i]>19){
@@ -154,7 +163,7 @@ function empiezaConNueve(n) {
   //inicia con 9 y false en otro caso.
   //Escribe tu código aquí
   let num=n.toString();
-  if(num.charAt(0)==='9'){ return true;
+  if(num.charAt()==='9'){ return true;
 
       }
       return false;
